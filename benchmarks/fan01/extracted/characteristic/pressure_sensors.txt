@@ -1,0 +1,15 @@
+PAGE 1
+x
+y
+z
+splitter-type silencer butterﬂy damper
+auxiliary fan
+test fan
+bellmouth inlet
+ﬂow
+straightener
+absorber
+2320
+1320
+2445
+all dimensions in mm

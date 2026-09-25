@@ -1,0 +1,36 @@
+{
+  "record": "https://zenodo.org/records/10787093",
+  "doi": "10.5281/zenodo.10787093",
+  "license": "CC-BY-4.0",
+  "retrieved_on": "2026-09-16",
+  "files": [
+    {
+      "name": "lda_data.zip",
+      "url": "https://zenodo.org/api/records/10787093/files/lda_data.zip/content",
+      "size_bytes": 748440,
+      "repository_checksum": "md5:7c05004f322658a54d6fca1a8b641502",
+      "sha256": "ffcb16532a81fdf314bcb7783aa2cab6db2f27985420aaf87f7c61ba710b0861"
+    },
+    {
+      "name": "cad_model.zip",
+      "url": "https://zenodo.org/api/records/10787093/files/cad_model.zip/content",
+      "size_bytes": 6499159,
+      "repository_checksum": "md5:0707f98ca71e1eae80fd0b67bc77a270",
+      "sha256": "cc4663dc26e700c226881e34317789ce6d79eaec2928939cce7c2b0f7f39daa6"
+    },
+    {
+      "name": "characteristic.zip",
+      "url": "https://zenodo.org/api/records/10787093/files/characteristic.zip/content",
+      "size_bytes": 34826,
+      "repository_checksum": "md5:17602ebcb1ec5bf1ed1861eb21537bac",
+      "sha256": "717433174a8c7c58974f5fb7a377fc116cc64422ee8a4df62fa7c065493cfbdf"
+    },
+    {
+      "name": "LA_Case4_AxialFan_measurements.pdf",
+      "url": "https://zenodo.org/api/records/10787093/files/LA_Case4_AxialFan_measurements.pdf/content",
+      "size_bytes": 2156667,
+      "repository_checksum": "md5:53f3255860b5212929148f6ce383b641",
+      "sha256": "273b71a49968654e2d3c4be574d0c0fc028e5c4f4d7fbd5c8ad3fccdd332545a"
+    }
+  ]
+}

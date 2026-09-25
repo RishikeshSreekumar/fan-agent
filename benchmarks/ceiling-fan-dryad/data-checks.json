@@ -1,0 +1,267 @@
+{
+  "source": "author GitHub version, not checksum-identical to Dryad",
+  "single_fan_points": 5760,
+  "two_fan_values": 20160,
+  "geometry_available": false,
+  "blade_validation_ready": false,
+  "quantity": "time-averaged omnidirectional speed; not axial velocity",
+  "coordinate_source": "single-fan server.R lines 2-3,17; cm converted to m, rows reversed",
+  "summaries": [
+    {
+      "speed_level": 0,
+      "height_m": 0.1,
+      "points": 180,
+      "minimum": 0.0,
+      "maximum": 0.016088889,
+      "arithmetic_sample_mean": 0.001861941338888889
+    },
+    {
+      "speed_level": 0,
+      "height_m": 0.6,
+      "points": 180,
+      "minimum": 0.0,
+      "maximum": 0.049633333,
+      "arithmetic_sample_mean": 0.008640184644444444
+    },
+    {
+      "speed_level": 0,
+      "height_m": 1.1,
+      "points": 180,
+      "minimum": 0.0,
+      "maximum": 0.045611111,
+      "arithmetic_sample_mean": 0.011874489172222223
+    },
+    {
+      "speed_level": 0,
+      "height_m": 1.7,
+      "points": 180,
+      "minimum": 0.0,
+      "maximum": 0.053977778,
+      "arithmetic_sample_mean": 0.018003250372222224
+    },
+    {
+      "speed_level": 1,
+      "height_m": 0.1,
+      "points": 180,
+      "minimum": 0.044277778,
+      "maximum": 0.303311111,
+      "arithmetic_sample_mean": 0.1397276383388889
+    },
+    {
+      "speed_level": 1,
+      "height_m": 0.6,
+      "points": 180,
+      "minimum": 0.011744444,
+      "maximum": 0.423222222,
+      "arithmetic_sample_mean": 0.11179379304999999
+    },
+    {
+      "speed_level": 1,
+      "height_m": 1.1,
+      "points": 180,
+      "minimum": 0.021988889,
+      "maximum": 0.4783,
+      "arithmetic_sample_mean": 0.11178398435555555
+    },
+    {
+      "speed_level": 1,
+      "height_m": 1.7,
+      "points": 180,
+      "minimum": 0.033622222,
+      "maximum": 0.554655556,
+      "arithmetic_sample_mean": 0.10622440555555555
+    },
+    {
+      "speed_level": 2,
+      "height_m": 0.1,
+      "points": 180,
+      "minimum": 0.106966667,
+      "maximum": 0.682555556,
+      "arithmetic_sample_mean": 0.3256588528166667
+    },
+    {
+      "speed_level": 2,
+      "height_m": 0.6,
+      "points": 180,
+      "minimum": 0.068211111,
+      "maximum": 0.863255556,
+      "arithmetic_sample_mean": 0.23524441416666667
+    },
+    {
+      "speed_level": 2,
+      "height_m": 1.1,
+      "points": 180,
+      "minimum": 0.100711111,
+      "maximum": 1.003511111,
+      "arithmetic_sample_mean": 0.23887958877222223
+    },
+    {
+      "speed_level": 2,
+      "height_m": 1.7,
+      "points": 180,
+      "minimum": 0.098466667,
+      "maximum": 1.112288889,
+      "arithmetic_sample_mean": 0.2328709578833333
+    },
+    {
+      "speed_level": 3,
+      "height_m": 0.1,
+      "points": 180,
+      "minimum": 0.137393258,
+      "maximum": 0.822277778,
+      "arithmetic_sample_mean": 0.40406146618333333
+    },
+    {
+      "speed_level": 3,
+      "height_m": 0.6,
+      "points": 180,
+      "minimum": 0.083244444,
+      "maximum": 1.039366667,
+      "arithmetic_sample_mean": 0.2920810388
+    },
+    {
+      "speed_level": 3,
+      "height_m": 1.1,
+      "points": 180,
+      "minimum": 0.119744444,
+      "maximum": 1.178866667,
+      "arithmetic_sample_mean": 0.29338249010555556
+    },
+    {
+      "speed_level": 3,
+      "height_m": 1.7,
+      "points": 180,
+      "minimum": 0.1237,
+      "maximum": 1.422777778,
+      "arithmetic_sample_mean": 0.2955497665666667
+    },
+    {
+      "speed_level": 4,
+      "height_m": 0.1,
+      "points": 180,
+      "minimum": 0.189211111,
+      "maximum": 1.263255556,
+      "arithmetic_sample_mean": 0.5900726311444444
+    },
+    {
+      "speed_level": 4,
+      "height_m": 0.6,
+      "points": 180,
+      "minimum": 0.144337079,
+      "maximum": 1.427311111,
+      "arithmetic_sample_mean": 0.40302954207222225
+    },
+    {
+      "speed_level": 4,
+      "height_m": 1.1,
+      "points": 180,
+      "minimum": 0.158433333,
+      "maximum": 1.669662921,
+      "arithmetic_sample_mean": 0.4102314280611111
+    },
+    {
+      "speed_level": 4,
+      "height_m": 1.7,
+      "points": 180,
+      "minimum": 0.204611111,
+      "maximum": 2.056292135,
+      "arithmetic_sample_mean": 0.4346227827222222
+    },
+    {
+      "speed_level": 5,
+      "height_m": 0.1,
+      "points": 180,
+      "minimum": 0.283066667,
+      "maximum": 1.626111111,
+      "arithmetic_sample_mean": 0.7845429025055556
+    },
+    {
+      "speed_level": 5,
+      "height_m": 0.6,
+      "points": 180,
+      "minimum": 0.198044444,
+      "maximum": 1.8243,
+      "arithmetic_sample_mean": 0.5234004788277778
+    },
+    {
+      "speed_level": 5,
+      "height_m": 1.1,
+      "points": 180,
+      "minimum": 0.217377778,
+      "maximum": 2.297111111,
+      "arithmetic_sample_mean": 0.5274761991388889
+    },
+    {
+      "speed_level": 5,
+      "height_m": 1.7,
+      "points": 180,
+      "minimum": 0.245288889,
+      "maximum": 2.676444444,
+      "arithmetic_sample_mean": 0.56609702605
+    },
+    {
+      "speed_level": 6,
+      "height_m": 0.1,
+      "points": 180,
+      "minimum": 0.278055556,
+      "maximum": 1.719888889,
+      "arithmetic_sample_mean": 0.8412139895888889
+    },
+    {
+      "speed_level": 6,
+      "height_m": 0.6,
+      "points": 180,
+      "minimum": 0.196177778,
+      "maximum": 1.734533333,
+      "arithmetic_sample_mean": 0.5682168650055556
+    },
+    {
+      "speed_level": 6,
+      "height_m": 1.1,
+      "points": 180,
+      "minimum": 0.232166667,
+      "maximum": 2.365444444,
+      "arithmetic_sample_mean": 0.5690855839944444
+    },
+    {
+      "speed_level": 6,
+      "height_m": 1.7,
+      "points": 180,
+      "minimum": 0.276022222,
+      "maximum": 2.932666667,
+      "arithmetic_sample_mean": 0.6190024733222222
+    },
+    {
+      "speed_level": 7,
+      "height_m": 0.1,
+      "points": 180,
+      "minimum": 0.359066667,
+      "maximum": 1.872888889,
+      "arithmetic_sample_mean": 0.9188483102777778
+    },
+    {
+      "speed_level": 7,
+      "height_m": 0.6,
+      "points": 180,
+      "minimum": 0.2274,
+      "maximum": 2.227545455,
+      "arithmetic_sample_mean": 0.6078357309277778
+    },
+    {
+      "speed_level": 7,
+      "height_m": 1.1,
+      "points": 180,
+      "minimum": 0.247977778,
+      "maximum": 2.605666667,
+      "arithmetic_sample_mean": 0.6025289987166667
+    },
+    {
+      "speed_level": 7,
+      "height_m": 1.7,
+      "points": 180,
+      "minimum": 0.287931818,
+      "maximum": 2.979222222,
+      "arithmetic_sample_mean": 0.6524499758388889
+    }
+  ]
+}

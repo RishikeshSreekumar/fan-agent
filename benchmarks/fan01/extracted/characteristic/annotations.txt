@@ -1,0 +1,4 @@
+# Pressure sensors for chamber pressur
+	There is a ring main connected to several small brass tubes (inner diameter 0.3 mm) inside the test chamber (marked with red circles).
+	One end of the ring main is connected to a differential pressure transducer which measures the differential pressure with respect
+	to the ambient pressure outside the test chamber.

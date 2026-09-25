@@ -1,0 +1,1 @@
+{"engine": "Gmsh", "version": "4.12.1", "source_format": "STEP", "output_units": "m", "solid_count": 1, "bounds_m": [-1e-07, -1e-07, -1e-07, 0.10000010000000001, 0.0800001, 0.0200001], "min_size_m": 0.0002000004, "max_size_m": 0.00166667, "curvature_elements_per_2pi": 24, "qualification": "Draft tessellation settings; not a qualified CFD mesh."}

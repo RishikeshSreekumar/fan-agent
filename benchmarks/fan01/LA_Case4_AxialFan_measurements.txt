@@ -1,0 +1,236 @@
+PAGE 1
+Benchmark case: Axial Fan Measurements
+All experimental investigations were made in a standardized inlet test chamber according to ISO 5801,
+see ﬁgure 2. The test chamber was built as an anechoic chamber with absorbing walls, ceiling and ﬂoor,
+to enable aeroacoustic measurements. The fan’s operating point was carefully adjusted with the butterﬂy
+damper (decrease volumetric ﬂow) or the auxiliary fan (increase volumetric ﬂow). The volumetric ﬂow
+was determined with a standardized bellmouth inlet, see ﬁgure 2. The fan was installed in a short duct
+with an inlet nozzle on the suction side and a diﬀusor on the pressure side to resemble a realistic test
+setup, see ﬁgure 1.
+torque
+meter motor
+cm
+x
+z
+y
+all dimensions in mm
+∅500
+390
+top view
+test chamber side ambient
+Figure 1: Experimental setup - detail view.
+x
+y
+z
+splitter-type silencer butterﬂy damper
+auxiliary fan
+test fan
+bellmouth inlet
+ﬂow
+straightener
+absorber
+2320
+1320
+2445
+all dimensions in mm
+Figure 2: Standardized inlet test chamber.
+1
+
+PAGE 2
+The fan was driven by a motor outside the duct. Torque and rotational speed were measured with a
+precision torque meter, see ﬁgure 1.
+Measurement details
+Information on the used measurement equipment and measuring times are shown in this sections. A
+detailed description of the experimental setup and the measurement positions is given in [1].
+LDA
+LDA system 2-component LDA probe, type 2D FiberFlow
+(Dantec Dynamics)
+BSA P80 burst spectrum analyzer (Dantec Dy-
+namics)
+BSA Flow software v5.20 (Dantec Dynamics)
+Measurement time 12 min or 2.5 × 106 samples per position
+Wall pressure ﬂuctuations
+Type diﬀerential pressure transducers XCS-093-1psi D
+(Kulite Semiconductor Products
+Measurement time 30 s with a sampling frequency of 48 kHz
+Microphones
+Type 1/2 inch free-ﬁeld microphones 4189-L-001 (Br¨ uel
+& Kjær
+Measurement time 30 s with a sampling frequency of 48 kHz
+Microphone array microphones
+Type 1/4 inch array microphones 40PH-Sx (G.R.A.S.
+Sound & Vibration)
+Measurement time 30 s with a sampling frequency of 48 kHz
+References
+[1] Zenger, F., Junger, C., Kaltenbacher, M., and Becker, S., ”A Benchmark Case for Aerodynamics and
+Aeroacoustics of a Low Pressure Axial Fan,” SAE Technical Paper 2016-01-1805, 2016, doi: 10.4271/2016-
+01-1805.
+[2] International Organization for Standardization, ”ISO 5801:2007 Industrial Fans - Performance Testing
+Using Standardized Airways”, 2007.
+Results
+This section includes the results for the fan aerodynamic and acoustic characteristic curve, ﬂow ﬁeld on
+the suction and pressure side, wall pressure ﬂuctuations and sound ﬁeld.
+Fan characteristic curve
+The aerodynamic characteristic curve is shown in ﬁgure 3.
+The fan reaches a maximum volumetric ﬂow of ˙V ≈ 2.1 m s−1 for ∆pts = 0 and a maximum pressure
+diﬀerence of ∆ pts = 250 Pa for ˙V ≈ 0.2 m s−1. The total-to-static eﬃciency is 53 % at the design
+volumetric ﬂow of ˙V = 1.4 m s−1.
+Figure 4 shows the acoustic characteristic curve of fan N1UG. At the design volumetric ﬂow, the
+overall sound power level is LW = 87.3 dB. Stall onset at lower volumetric ﬂows can be detected by the
+rise in LW at 1.1 m3 s−1 with a maximum of LW = 93 dB at ˙V = 1 m s−1.
+Flow ﬁeld
+Figure 5 shows the time averaged values of the meridional velocity on the suction and pressure side for
+a volumetric ﬂow of 1 .4 m3 s−1.
+2
+
+PAGE 3
+volumetric flow in m
+3
+/s
+total-to-static pressuredifferenceptsin Pa
+total-to-static efficiencyts
+0 0.5 1 1.5 20
+50
+100
+150
+200
+250
+300
+350
+400
+-1.2
+-1
+-0.8
+-0.6
+-0.4
+-0.2
+0
+0.2
+0.4
+0.6
+pts N1UG
+tsN1UG
+Figure 3: Fan aerodynamic characteristic curve.
+volumetric flow m
+3
+/s
+sound power level in dB
+0 0.5 1 1.5 275
+80
+85
+90
+95
+N1UG
+Figure 4: Fan acoustic characteristic curve.
+r/rduct
+cmin m/s
+0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1
+2
+4
+6
+8
+10
+12
+14
+suction side
+pressure side
+Figure 5: Time averaged values of meridional velocity on suction and pressure side.
+3
+
+PAGE 4
+On the suction side, the meridional ﬂow is accelerated around the hub at r/rduct = 0 .5 and then
+decreased towards the duct wall atr/rduct = 1. On the pressure side, the peak velocity is at r/rduct = 0.84
+with 12 m s−1. Towards the hub, it decreases to 10 m s −1 and towards the duct wall to 3 .5 m s−1.
+Figure 6a shows the ensemble averaged values for meridional velocitycm (contour) and circumferential
+velocity cθ and radial velocity cr (vector ﬁeld) on the suction side with fan N1UG in the background.
+Rotational direction is clockwise.
+Corresponding to ﬁgure 5, the meridional velocity decreases from hub to tip. The maximum is reached
+during the blade passage near the hub. The circumferential velocity is also maximal near the hub, short
+after the blade passage. Near the tip, a small region with ﬂow against the rotational direction during the
+blade passage can be observed. The radial velocity shows high values during the blade passage at the
+midspan region.
+Accordingly, ﬁgure 6b shows the ensemble averaged values for the pressure side. Here, the meridional
+velocity cm has the highest values in between two blade passages. Due to the motion of the fan, a
+circumferential component is superimposed on the pressure side. The values are small in the same region
+as with high meridional velocity. Radial velocity is rather constant, only near the hub, a region with
+negative values can be observed.
+a Suction side: ensemble averaged meridional velocity
+cm.
+b Pressure side: ensemble averaged circumferential ve-
+locity cθ.
+Figure 6: Ensemble averaged velocity values.
+The ensemble averaged turbulent kinetic energy on the suction and pressure side is shown in ﬁgures
+7a and 7b. On the suction side, values are low, except during the blade passage where the turbulent
+kinetic energy reaches values of k = 35 m2/s2. On the pressure side, turbulent kinetic energy is high at
+the blade tips and at the hub region.
+4
+
+PAGE 5
+a Suction side: ensemble averaged turbulent kinetic en-
+ergy k.
+b Pressure side: ensemble averaged turbulent kinetic
+energy k.
+Figure 7: Turbulent kinetic energy.
+Wall pressure ﬂuctuations
+Spectra of wall pressure ﬂuctuations (superposition of acoustic and hydrodynamic ﬂuctuations) for se-
+lected transducers are shown in ﬁgure 8. Note that y-axis values are in dB.
+frequency in Hz
+pressure level indB, rel. 2e-5 Pa
+10
+2
+10
+3
+10
+440
+60
+80
+100
+120
+140
+transducer 02
+transducer 07
+transducer 13
+Figure 8: Spectra of wall pressure ﬂuctuations.
+Tonal components can mainly be seen at the blade passing frequency (BPF) at 225 Hz and harmonics.
+The curve for transducer 2 shows the highest broadband values, being axially positioned very close to
+the blade tip during the blade passage. Elevations can also be observed at 338 Hz (1 .5 · BPF) and
+1.5 · 338 Hz = 507 Hz. This eﬀect does also occur in the sound power spectrum.
+Sound ﬁeld
+The sound power spectrum, calculated from seven 1/2 inch free-ﬁeld microphones is shown in ﬁgure 9.
+Tonal components can be seen at the BPF (225 Hz) and harmonics. Additional tonal components in the
+range from 7 kHz to 8 .5 kHz are caused by the frequency converter of the drive motor. Similar to the
+spectrum of wall pressure ﬂuctuations of transducer 2, subharmonic peaks can be observed at 338 Hz
+and 507 Hz. The amplitude of the highest peak is even above the amplitude of the BPF, suggesting a
+dominant eﬀect. It is expected that this is caused by an interaction of the gap ﬂow with the fan blades.
+5
+
+PAGE 6
+frequency in Hz
+sound power level in dB
+10
+2
+10
+3
+10
+4
+40
+60
+80
+N1UG
+Figure 9: Sound Power Spectra.
+Beamforming results for 2 kHz, 4 kHz and 5 kHz third-octave band are displayed in ﬁgures 10 to 12.
+On low pressure axial fans, leading edge noise is expected to be prevailing in the low-frequency region,
+whereas trailing edge noise is mainly anticipated in the high-frequency region. Futhermore, more sound
+sources are anticipated at the blade tip, as there is a higher circumferential velocity and consequently a
+higher Mach number than at the hub region. Looking at the sound map at 2 kHz, this can be conﬁrmed,
+as sound sources are mainly located at the leading edge and at the blade tip (with high circumferential
+velocity). At 4 kHz, sound sources are distributed over the whole region from leading to trailing edge.
+Hence the transition from leading to trailing edge noise takes place in this frequency band. At 5 kHz,
+sound sources are more dominant on the trailing edge than on the leading edge.
+Figure 10: Sound map, 2 kHz third-octave band.
+6
+
+PAGE 7
+Figure 11: Sound map, 4 kHz third-octave band.
+Figure 12: Sound map, 5 kHz third-octave band.
+7

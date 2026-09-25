@@ -1,0 +1,163 @@
+{
+  "checkpoint": "rotor_surface_and_inner_passage_prepared",
+  "original_cad_sha256": "a996f75fffa4aad01426bbf26d75507d7c0c79f7e09b33c6576207e3bb867574",
+  "source_units": "mm",
+  "axis_native": [
+    0,
+    1,
+    0
+  ],
+  "native_axis_line_XZ_mm": [
+    -400,
+    1515
+  ],
+  "case_origin_native_mm": [
+    -400,
+    -460,
+    1515
+  ],
+  "case_axes_native": {
+    "x": [
+      0,
+      1,
+      0
+    ],
+    "y": [
+      0,
+      0,
+      1
+    ],
+    "z": [
+      1,
+      0,
+      0
+    ]
+  },
+  "case_units": "m",
+  "LDA_origin_resolved": false,
+  "LDA_axial_source_mm": {
+    "suction": 20,
+    "pressure": 90
+  },
+  "pressure_ring": "Chamber wall taps relative to outside ambient, confirmed by supplied diagram/annotation; exact tap coordinates unresolved.",
+  "rotation_sign": "Source describes clockwise on suction-side illustration; positive about downstream x is the candidate convention, pending explicit final check.",
+  "rotor": {
+    "curvature_sizing": 0,
+    "source_sha256": "6e55f67c7023f866592700a47e508a498acbbf356829a4347ad2f705f560dc17",
+    "transform_from_native_mm": [
+      0,
+      0.001,
+      0,
+      0.46,
+      0,
+      0,
+      0.001,
+      -1.515,
+      0.001,
+      0,
+      0,
+      0.4,
+      0,
+      0,
+      0,
+      1
+    ],
+    "frame": "x downstream (native Y); y up (native Z); z native X. Origin (-400,-460,1515) mm at nozzle/straight-duct transition; not asserted to be LDA origin.",
+    "rotation_axis": [
+      1,
+      0,
+      0
+    ],
+    "counts": {
+      "faces": 100,
+      "triangles": 112728,
+      "nodes": 56366
+    },
+    "cad_volume_m3": 0.0011729790068663055,
+    "surface_signed_volume_m3": 0.0011751969347355837,
+    "surface_volume_relative_error": 0.0018908504383242184,
+    "surface_closed_manifold": true,
+    "maximum_sampled_radius_m": 0.2474978246056382,
+    "nominal_radial_gap_m": 0.0025,
+    "bounds_from_mesh_m": [
+      0.03900000009482935,
+      -0.24513304967242977,
+      -0.24359890024902986,
+      0.15400000000000008,
+      0.24749415612278014,
+      0.24749083424318735
+    ],
+    "status": "rotor_surface_prepared_not_volume_mesh_or_solver_validation"
+  },
+  "passage": {
+    "status": "geometry_coupon_only_not_complete_validation_domain",
+    "units": "m",
+    "passage_volume_m3": 0.07691216584070559,
+    "analytical_passage_volume_m3": 0.07691216584070558,
+    "rotor_volume_m3": 0.0011729790068663046,
+    "fluid_volume_m3": 0.0757393183384862,
+    "fluid_volumes": 1,
+    "surface_faces": 105,
+    "profile": {
+      "nozzle_inlet_x": -0.05,
+      "nozzle_inlet_radius": 0.3,
+      "nozzle_rounding_radius": 0.05,
+      "straight_start_x": 0,
+      "straight_end_x": 0.196,
+      "straight_radius": 0.25,
+      "diffuser_end_x": 0.324,
+      "diffuser_end_radius": 0.275
+    },
+    "simplifications": [
+      "Sealed nozzle/manufacturing openings and 3 mm assembly joints along the nominal inner passage, following the published simplification intent."
+    ],
+    "remaining": [
+      "Add inlet and outlet chambers.",
+      "Add appropriate stationary shaft/motor/strut obstruction.",
+      "Resolve LDA coordinate origin and pressure-ring locations before validation sampling.",
+      "Construct fluid volume mesh and qualify wall/tip-gap resolution."
+    ]
+  },
+  "openfoam_surface_check": {
+    "version": "v2412",
+    "closed": true,
+    "connected_parts": 1,
+    "consistent_normal_zones": 1,
+    "self_intersection_detected": false,
+    "minimum_triangle_quality": 0.00117793,
+    "note": "Thin surface triangles remain; this does not establish acceptable volume-mesh quality."
+  },
+  "attempts": [
+    {
+      "method": "Global assembly sewing at 1e-5 mm",
+      "result": "36 connected shell groups; no solid recovery globally"
+    },
+    {
+      "method": "Rotor-only sewing at 0.001 mm",
+      "result": "One solid, 100 faces retained"
+    },
+    {
+      "method": "Curvature-sized rotor surface mesh",
+      "result": "180-second timeout; no accepted STL from that attempt"
+    },
+    {
+      "method": "Fixed-size rotor surface mesh",
+      "result": "Completed; closed surface and volume-agreement checks passed"
+    },
+    {
+      "method": "Stationary whole-shell construction",
+      "result": "Rejected by volume sign check; individual nozzle healing produced no solid; these are not accepted solids"
+    },
+    {
+      "method": "CAD-profile passage reconstruction",
+      "result": "Analytical-volume and rotor-subtraction checks passed; full test chambers/obstructions still absent"
+    }
+  ],
+  "artifacts": {
+    "rotor-metres.brep": "6b66a2baae01ba0773f2c8ac02d8c594705b50a16d23ebd05b604ab45afda9c8",
+    "rotor-metres.stl": "01a5a0da6b8231f5360784d90bc865ca8e313e5a8d5bf56dc600f5801d4f8224",
+    "passage-metres.brep": "ba5030d75798aeadf3bb73e86c07b97c3ff30ea3a4f554331bd3d747ce488c29",
+    "rotor-passage-fluid-metres.brep": "beb4b401db8e0a9dd93e657a09be27ac611a5a770a35d178589374fafc30e07b",
+    "numerical-study.pdf": "e9f67e165880dc1813690ee3b4dccf11452550a5af99d7d9f92896c1c5b33722"
+  }
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+data/cases/
+data/geometry/
+data/tmp/
+data/runtime/
+.env
+.DS_Store
+# Vendored numpy for the paused FAN-01 importer (benchmarks/fan01/extract_reference.py); reinstall locally, do not commit.
+benchmarks/fan01/.reader-deps/

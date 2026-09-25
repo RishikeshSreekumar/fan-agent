@@ -1,0 +1,20 @@
+[
+  {
+    "file": "Single_Fan.csv",
+    "source": "https://raw.githubusercontent.com/CenterForTheBuiltEnvironment/single-fan/69f19e27714043030d7dc27f2c0c1167ea7d45d7/Single_Fan.csv",
+    "commit": "69f19e27714043030d7dc27f2c0c1167ea7d45d7",
+    "bytes": 67520,
+    "sha256": "2aba83f0a13e523839cbdf286b5c1562a555a369a748218eebb274f5748ce9bd",
+    "dryad_sha256": "a297104ecb711fef7665cc5d9511c206f3b6851ddad8fcbb0e7396da4f6b6f01",
+    "matching_normalizations": []
+  },
+  {
+    "file": "Two_Fan.csv",
+    "source": "https://raw.githubusercontent.com/CenterForTheBuiltEnvironment/two-fans/63a1ae3d8b24711574252bc8d40e6b4e3edd09c9/Two_Fan.csv",
+    "commit": "63a1ae3d8b24711574252bc8d40e6b4e3edd09c9",
+    "bytes": 234708,
+    "sha256": "b8f3d901260dbbe2f8d2e488c0da3b695caac99e64e5b28249f875b1d0907b45",
+    "dryad_sha256": "88f473e5ed01974c8a14bf4a43effeaa6e6e06cc1206bd5c0273ec4ab13a8af9",
+    "matching_normalizations": []
+  }
+]

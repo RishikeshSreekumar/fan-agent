@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-09-18",
+  "doi": "doi:10.6078/D1V67R",
+  "version": 31429,
+  "metadata_acquired": true,
+  "csv_acquired": false,
+  "cad_in_manifest": false,
+  "readme_in_manifest": false,
+  "decision": "author-version room-speed reference acquired and normalized; no matched blade geometry",
+  "files": [
+    {
+      "name": "Single_Fan.csv",
+      "bytes": 68839,
+      "expected_sha256": "a297104ecb711fef7665cc5d9511c206f3b6851ddad8fcbb0e7396da4f6b6f01",
+      "downloaded": false
+    },
+    {
+      "name": "Two_Fan.csv",
+      "bytes": 239147,
+      "expected_sha256": "88f473e5ed01974c8a14bf4a43effeaa6e6e06cc1206bd5c0273ec4ab13a8af9",
+      "downloaded": false
+    }
+  ],
+  "access_failures": {
+    "api_download": "HTTP 401",
+    "browser_download": "HTTP 403",
+    "browser_session_retry": "HTTP 403",
+    "zip_endpoint": "HTTP 403",
+    "preview": "HTTP 500"
+  },
+  "author_csv_acquired": true,
+  "author_single_fan_points": 5760,
+  "author_two_fan_values": 20160,
+  "author_matches_dryad": false
+}

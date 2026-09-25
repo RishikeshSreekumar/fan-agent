@@ -1,0 +1,277 @@
+[
+  {
+    "case": "/home/akshay/fan-agent-mesh-AAS5lrVd",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 30027,
+      "added_layer_cells": null,
+      "face_extrusion": null,
+      "development_gate_passed": false,
+      "total_cells": 60170,
+      "concave_cells": 2292,
+      "small_determinant_cells": null,
+      "min_volume_m3": 4.0453086e-07,
+      "max_non_orthogonality_deg": 46.130733,
+      "max_skewness": 3.3410389,
+      "layers": null,
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-RTnnHBDn",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 43335,
+      "added_layer_cells": 3261,
+      "face_extrusion": {
+        "extruded_faces": 1653,
+        "candidate_faces": 2434
+      },
+      "development_gate_passed": false,
+      "total_cells": 82275,
+      "concave_cells": 732,
+      "small_determinant_cells": 14,
+      "min_volume_m3": 3.8468985e-08,
+      "max_non_orthogonality_deg": 55.808416,
+      "max_skewness": 3.2692983,
+      "layers": {
+        "patch_faces": 2434,
+        "target_layers": 3,
+        "mean_layers": 1.34,
+        "mean_thickness_m": 0.00454,
+        "thickness_percent_of_requested": 38.5
+      },
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-EeqhvBDG",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 121592,
+      "added_layer_cells": 0,
+      "face_extrusion": {
+        "extruded_faces": 0,
+        "candidate_faces": 9665
+      },
+      "development_gate_passed": false,
+      "total_cells": 163426,
+      "concave_cells": 18,
+      "small_determinant_cells": null,
+      "min_volume_m3": 5.4317003e-08,
+      "max_non_orthogonality_deg": 62.561999,
+      "max_skewness": 3.1061569,
+      "layers": null,
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-gkjzPkUQ",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 137546,
+      "added_layer_cells": 15954,
+      "face_extrusion": {
+        "extruded_faces": 8788,
+        "candidate_faces": 9623
+      },
+      "development_gate_passed": false,
+      "total_cells": 179380,
+      "concave_cells": 1519,
+      "small_determinant_cells": 18,
+      "min_volume_m3": 4.9494086e-09,
+      "max_non_orthogonality_deg": 62.280336,
+      "max_skewness": 18.773353,
+      "layers": {
+        "patch_faces": 9623,
+        "target_layers": 3,
+        "mean_layers": 1.66,
+        "mean_thickness_m": 0.00379,
+        "thickness_percent_of_requested": 64.3
+      },
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-BGaGpYp8",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 129366,
+      "added_layer_cells": 7774,
+      "face_extrusion": {
+        "extruded_faces": 7774,
+        "candidate_faces": 9665
+      },
+      "development_gate_passed": false,
+      "total_cells": 171200,
+      "concave_cells": 18,
+      "small_determinant_cells": 64,
+      "min_volume_m3": 3.3357651e-09,
+      "max_non_orthogonality_deg": 64.182362,
+      "max_skewness": 3.1061569,
+      "layers": {
+        "patch_faces": 9665,
+        "target_layers": 1,
+        "mean_layers": 0.804,
+        "mean_thickness_m": 0.00225,
+        "thickness_percent_of_requested": 60.0
+      },
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-YnXuQdas",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 137585,
+      "added_layer_cells": 15993,
+      "face_extrusion": {
+        "extruded_faces": 5799,
+        "candidate_faces": 5909
+      },
+      "development_gate_passed": false,
+      "total_cells": 179419,
+      "concave_cells": 863,
+      "small_determinant_cells": 22,
+      "min_volume_m3": 1.5290466e-08,
+      "max_non_orthogonality_deg": 60.67018,
+      "max_skewness": 3.7183029,
+      "layers": {
+        "patch_faces": 5909,
+        "target_layers": 3,
+        "mean_layers": 2.71,
+        "mean_thickness_m": 0.00926,
+        "thickness_percent_of_requested": 93.9
+      },
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-6xCb4e4u",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 138336,
+      "added_layer_cells": 16744,
+      "face_extrusion": {
+        "extruded_faces": 5883,
+        "candidate_faces": 5909
+      },
+      "development_gate_passed": false,
+      "total_cells": 180170,
+      "concave_cells": 808,
+      "small_determinant_cells": 20,
+      "min_volume_m3": 9.5944802e-09,
+      "max_non_orthogonality_deg": 63.418101,
+      "max_skewness": 3.720469,
+      "layers": {
+        "patch_faces": 5909,
+        "target_layers": 3,
+        "mean_layers": 2.83,
+        "mean_thickness_m": 0.00359,
+        "thickness_percent_of_requested": 98.8
+      },
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-qGVvCf6c/stages/snapped",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 121592,
+      "added_layer_cells": null,
+      "face_extrusion": null,
+      "development_gate_passed": false,
+      "total_cells": 163426,
+      "concave_cells": 19,
+      "small_determinant_cells": null,
+      "min_volume_m3": 6.0848425e-08,
+      "max_non_orthogonality_deg": 60.67018,
+      "max_skewness": 3.1020201,
+      "layers": null,
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-qGVvCf6c",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 138367,
+      "added_layer_cells": 16775,
+      "face_extrusion": {
+        "extruded_faces": 5882,
+        "candidate_faces": 5909
+      },
+      "development_gate_passed": false,
+      "total_cells": 180201,
+      "concave_cells": 823,
+      "small_determinant_cells": 24,
+      "min_volume_m3": 9.6348719e-09,
+      "max_non_orthogonality_deg": 59.948788,
+      "max_skewness": 3.7204684,
+      "layers": {
+        "patch_faces": 5909,
+        "target_layers": 3,
+        "mean_layers": 2.84,
+        "mean_thickness_m": 0.00359,
+        "thickness_percent_of_requested": 98.7
+      },
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-zTflybvO/stages/snapped",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 121592,
+      "added_layer_cells": null,
+      "face_extrusion": null,
+      "development_gate_passed": false,
+      "total_cells": 163426,
+      "concave_cells": 1503,
+      "small_determinant_cells": null,
+      "min_volume_m3": 6.434839e-08,
+      "max_non_orthogonality_deg": 60.473023,
+      "max_skewness": 3.1020201,
+      "layers": null,
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  },
+  {
+    "case": "/home/akshay/fan-agent-mesh-zTflybvO",
+    "quality": {
+      "extended_mesh_check_passed": false,
+      "rotor_cells": 132755,
+      "added_layer_cells": 11163,
+      "face_extrusion": {
+        "extruded_faces": 6270,
+        "candidate_faces": 7233
+      },
+      "development_gate_passed": false,
+      "total_cells": 174589,
+      "concave_cells": 1808,
+      "small_determinant_cells": 30,
+      "min_volume_m3": 1.5535854e-08,
+      "max_non_orthogonality_deg": 64.280304,
+      "max_skewness": 3.5508212,
+      "layers": {
+        "patch_faces": 7233,
+        "target_layers": 3,
+        "mean_layers": 1.54,
+        "mean_thickness_m": 0.00265,
+        "thickness_percent_of_requested": 72.9
+      },
+      "accepted_for_solver": false,
+      "note": "Missing counts mean not reported, not zero. Layer mean and thickness are not coverage or y-plus validation."
+    }
+  }
+]

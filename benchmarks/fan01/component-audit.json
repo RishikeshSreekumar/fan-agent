@@ -1,0 +1,12 @@
+{
+  "source": "extracted/cad_model/cad_model.igs",
+  "tolerance_mm": 1e-05,
+  "elapsed_s": 45.07682051999291,
+  "counts": {
+    "0": 8777,
+    "1": 12930,
+    "2": 3864,
+    "3": 0
+  },
+  "volumes": []
+}

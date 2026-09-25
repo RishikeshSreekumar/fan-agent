@@ -1,0 +1,95 @@
+{
+  "baseline_case": "/home/akshay/fan-agent-solver-extended-XLn0e3bm",
+  "study_case": "/home/akshay/fan-agent-convergence-gBv6lFxm",
+  "only_solver_change": "endTime 1000 to 2000; restart from latestTime",
+  "mesh_and_physics_unchanged": true,
+  "targets_unchanged": true,
+  "baseline": {
+    "iteration": 1000,
+    "convergence": {
+      "status": "not_converged",
+      "checks": {
+        "residual_targets_met": false,
+        "torque_window_stable": true,
+        "flow_snapshots_stable": false
+      },
+      "provisional_residual_limits": {
+        "Ux": 0.0001,
+        "Uy": 0.0001,
+        "Uz": 0.0001,
+        "p": 0.001,
+        "k": 0.0001,
+        "omega": 0.0001
+      },
+      "relative_stability_limit": 0.02,
+      "flow_relative_change": 0.02670302393315011,
+      "note": "Development targets only. Does not qualify wall treatment, grid independence, or performance accuracy."
+    },
+    "torque": {
+      "last_iteration": 1000.0,
+      "last_values": {
+        "axis_torque_nm": 1.8142017333,
+        "aerodynamic_shaft_power_w": 53.19517314967472,
+        "electrical_input_power_w": null
+      },
+      "window_iterations": 50,
+      "mean_axis_torque_nm": 1.822055914076,
+      "relative_peak_to_peak": 0.007999495947077759
+    },
+    "residuals": {
+      "Ux": 0.0009109367607,
+      "Uy": 0.0008560318846,
+      "Uz": 0.0008605100039,
+      "p": 0.009942188924,
+      "omega": 3.805301522e-05,
+      "k": 0.0002558111873
+    }
+  },
+  "study": {
+    "iteration": 2000,
+    "convergence": {
+      "status": "not_converged",
+      "checks": {
+        "residual_targets_met": false,
+        "torque_window_stable": true,
+        "flow_snapshots_stable": true
+      },
+      "provisional_residual_limits": {
+        "Ux": 0.0001,
+        "Uy": 0.0001,
+        "Uz": 0.0001,
+        "p": 0.001,
+        "k": 0.0001,
+        "omega": 0.0001
+      },
+      "relative_stability_limit": 0.02,
+      "flow_relative_change": 0.009910513746203494,
+      "note": "Development targets only. Does not qualify wall treatment, grid independence, or performance accuracy."
+    },
+    "torque": {
+      "long_window_drift": {
+        "window_samples": 250,
+        "previous_mean_nm": 1.6533489878364,
+        "recent_mean_nm": 1.614952811948,
+        "relative_change": 0.023775416596900703
+      },
+      "last_iteration": 2000.0,
+      "last_values": {
+        "axis_torque_nm": 1.6028471673,
+        "aerodynamic_shaft_power_w": 46.99793359909098,
+        "electrical_input_power_w": null
+      },
+      "window_iterations": 50,
+      "mean_axis_torque_nm": 1.6038112958019999,
+      "relative_peak_to_peak": 0.0009852594280487534
+    },
+    "residuals": {
+      "Ux": 0.0003944090793,
+      "Uy": 0.0004349693515,
+      "Uz": 0.0004896165832,
+      "p": 0.004486026467,
+      "omega": 1.853729898e-05,
+      "k": 0.0001366407826
+    }
+  }
+}

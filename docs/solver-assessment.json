@@ -1,0 +1,594 @@
+{
+  "case": "/home/akshay/fan-agent-convergence-gBv6lFxm",
+  "classification": "provisional_engineering_run",
+  "accepted_performance": false,
+  "mesh": "168591-cell CAD tetrahedral baseline",
+  "rpm": 280,
+  "model": "steady MRF / kOmegaSST",
+  "numerics": "First-order bounded upwind development settings",
+  "execution_completed": true,
+  "final_initial_residuals": {
+    "Ux": 0.0003944090793,
+    "Uy": 0.0004349693515,
+    "Uz": 0.0004896165832,
+    "p": 0.004486026467,
+    "omega": 1.853729898e-05,
+    "k": 0.0001366407826
+  },
+  "convergence": {
+    "status": "not_converged",
+    "checks": {
+      "residual_targets_met": false,
+      "torque_window_stable": true,
+      "flow_snapshots_stable": true
+    },
+    "provisional_residual_limits": {
+      "Ux": 0.0001,
+      "Uy": 0.0001,
+      "Uz": 0.0001,
+      "p": 0.001,
+      "k": 0.0001,
+      "omega": 0.0001
+    },
+    "relative_stability_limit": 0.02,
+    "flow_relative_change": 0.009910513746203494,
+    "note": "Development targets only. Does not qualify wall treatment, grid independence, or performance accuracy."
+  },
+  "diagnostics": {
+    "residual_history": [
+      {
+        "iteration": 100,
+        "residuals": {
+          "Ux": 0.004432159765,
+          "Uy": 0.004481016155,
+          "Uz": 0.004341284554,
+          "p": 0.03058472234,
+          "omega": 0.002836241802,
+          "k": 0.007051759654
+        }
+      },
+      {
+        "iteration": 200,
+        "residuals": {
+          "Ux": 0.002166963636,
+          "Uy": 0.002314591833,
+          "Uz": 0.002708665454,
+          "p": 0.0215214459,
+          "omega": 0.0003693794672,
+          "k": 0.001830916883
+        }
+      },
+      {
+        "iteration": 300,
+        "residuals": {
+          "Ux": 0.001876112009,
+          "Uy": 0.001615718537,
+          "Uz": 0.002003050472,
+          "p": 0.01906834303,
+          "omega": 0.0001683860381,
+          "k": 0.0009899607398
+        }
+      },
+      {
+        "iteration": 400,
+        "residuals": {
+          "Ux": 0.001565899437,
+          "Uy": 0.001439569631,
+          "Uz": 0.001396446764,
+          "p": 0.01737072598,
+          "omega": 9.493219066e-05,
+          "k": 0.0006304083209
+        }
+      },
+      {
+        "iteration": 500,
+        "residuals": {
+          "Ux": 0.001420704968,
+          "Uy": 0.001422290207,
+          "Uz": 0.00122288139,
+          "p": 0.01349163163,
+          "omega": 7.223726734e-05,
+          "k": 0.0004535862514
+        }
+      },
+      {
+        "iteration": 600,
+        "residuals": {
+          "Ux": 0.001411928789,
+          "Uy": 0.00135131107,
+          "Uz": 0.001337961582,
+          "p": 0.01480238111,
+          "omega": 6.893210474e-05,
+          "k": 0.0004432565429
+        }
+      },
+      {
+        "iteration": 700,
+        "residuals": {
+          "Ux": 0.001102915906,
+          "Uy": 0.001084920427,
+          "Uz": 0.001058630201,
+          "p": 0.01215226524,
+          "omega": 5.32666495e-05,
+          "k": 0.0003341107093
+        }
+      },
+      {
+        "iteration": 800,
+        "residuals": {
+          "Ux": 0.0008039795165,
+          "Uy": 0.0008039354174,
+          "Uz": 0.0008885092961,
+          "p": 0.009467619465,
+          "omega": 4.48610294e-05,
+          "k": 0.0003277640102
+        }
+      },
+      {
+        "iteration": 900,
+        "residuals": {
+          "Ux": 0.0009168152026,
+          "Uy": 0.0008139372492,
+          "Uz": 0.0008908462027,
+          "p": 0.01085780023,
+          "omega": 3.725717311e-05,
+          "k": 0.000236972173
+        }
+      },
+      {
+        "iteration": 1000,
+        "residuals": {
+          "Ux": 0.0009109367607,
+          "Uy": 0.0008560318846,
+          "Uz": 0.0008605100039,
+          "p": 0.009942188924,
+          "omega": 3.805301522e-05,
+          "k": 0.0002558111873
+        }
+      },
+      {
+        "iteration": 1100,
+        "residuals": {
+          "Ux": 0.0007329090173,
+          "Uy": 0.0008335118697,
+          "Uz": 0.0008054599526,
+          "p": 0.009428518399,
+          "omega": 3.343739153e-05,
+          "k": 0.000213811386
+        }
+      },
+      {
+        "iteration": 1200,
+        "residuals": {
+          "Ux": 0.0007046315233,
+          "Uy": 0.0006630344261,
+          "Uz": 0.0007287317061,
+          "p": 0.007851903781,
+          "omega": 2.84783631e-05,
+          "k": 0.0002050745745
+        }
+      },
+      {
+        "iteration": 1300,
+        "residuals": {
+          "Ux": 0.0005187546716,
+          "Uy": 0.0005623798487,
+          "Uz": 0.0006210173426,
+          "p": 0.006400302567,
+          "omega": 2.5663629e-05,
+          "k": 0.0001803317796
+        }
+      },
+      {
+        "iteration": 1400,
+        "residuals": {
+          "Ux": 0.0005758759307,
+          "Uy": 0.0005379855532,
+          "Uz": 0.0006178549778,
+          "p": 0.006259883047,
+          "omega": 2.337612989e-05,
+          "k": 0.000163886748
+        }
+      },
+      {
+        "iteration": 1500,
+        "residuals": {
+          "Ux": 0.0005083447,
+          "Uy": 0.0005478649035,
+          "Uz": 0.0006055063463,
+          "p": 0.005919360331,
+          "omega": 2.166029573e-05,
+          "k": 0.0001593383672
+        }
+      },
+      {
+        "iteration": 1600,
+        "residuals": {
+          "Ux": 0.0004960361851,
+          "Uy": 0.000488885663,
+          "Uz": 0.0005753539239,
+          "p": 0.005735147291,
+          "omega": 2.005720369e-05,
+          "k": 0.0001453304404
+        }
+      },
+      {
+        "iteration": 1700,
+        "residuals": {
+          "Ux": 0.0004783805792,
+          "Uy": 0.0004897688124,
+          "Uz": 0.0005023910899,
+          "p": 0.005472800429,
+          "omega": 1.961191736e-05,
+          "k": 0.0001327797607
+        }
+      },
+      {
+        "iteration": 1800,
+        "residuals": {
+          "Ux": 0.0004573888682,
+          "Uy": 0.0004706899649,
+          "Uz": 0.0004963754434,
+          "p": 0.005306760418,
+          "omega": 1.97764333e-05,
+          "k": 0.0001408328644
+        }
+      },
+      {
+        "iteration": 1900,
+        "residuals": {
+          "Ux": 0.0004528089216,
+          "Uy": 0.0004305460743,
+          "Uz": 0.0004848904155,
+          "p": 0.004728060229,
+          "omega": 1.795454704e-05,
+          "k": 0.0001291565303
+        }
+      },
+      {
+        "iteration": 2000,
+        "residuals": {
+          "Ux": 0.0003944090793,
+          "Uy": 0.0004349693515,
+          "Uz": 0.0004896165832,
+          "p": 0.004486026467,
+          "omega": 1.853729898e-05,
+          "k": 0.0001366407826
+        }
+      }
+    ],
+    "latest_y_plus": {
+      "fan": {
+        "min": 2.831165744,
+        "max": 604.7489627,
+        "average": 146.9128301
+      },
+      "roomWalls": {
+        "min": 28.16831222,
+        "max": 2616.165036,
+        "average": 803.1446511
+      },
+      "ceiling": {
+        "min": 51.19234952,
+        "max": 5053.558734,
+        "average": 1797.037686
+      },
+      "floor": {
+        "min": 40.58882261,
+        "max": 820.202077,
+        "average": 463.8474255
+      }
+    },
+    "last_continuity_errors": {
+      "local": 9.085796281e-05,
+      "global": -9.046385255e-18,
+      "cumulative": 7.591927083e-16
+    }
+  },
+  "torque": {
+    "long_window_drift": {
+      "window_samples": 250,
+      "previous_mean_nm": 1.6533489878364,
+      "recent_mean_nm": 1.614952811948,
+      "relative_change": 0.023775416596900703
+    },
+    "last_iteration": 2000.0,
+    "last_values": {
+      "axis_torque_nm": 1.6028471673,
+      "aerodynamic_shaft_power_w": 46.99793359909098,
+      "electrical_input_power_w": null
+    },
+    "window_iterations": 50,
+    "mean_axis_torque_nm": 1.6038112958019999,
+    "relative_peak_to_peak": 0.0009852594280487534
+  },
+  "plane_height_m": 1.2,
+  "planes": {
+    "100": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 98.35590362577551,
+      "downward_flow_cfm": 3473.405956635113,
+      "reverse_flow_cmm": 96.62662990386106,
+      "net_downward_flow_cmm": 1.7292737219144527,
+      "mean_air_speed_ms": 0.2715669250152349,
+      "downward_coverage_fraction": 0.027496942050141686,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "200": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 202.1681173539894,
+      "downward_flow_cfm": 7139.499686066928,
+      "reverse_flow_cmm": 198.0880070057735,
+      "net_downward_flow_cmm": 4.0801103482158965,
+      "mean_air_speed_ms": 0.6843384287376517,
+      "downward_coverage_fraction": 0.18784763090277254,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "300": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 344.35350458759916,
+      "downward_flow_cfm": 12160.729248887656,
+      "reverse_flow_cmm": 341.10336080138296,
+      "net_downward_flow_cmm": 3.2501437862161993,
+      "mean_air_speed_ms": 1.223083575648257,
+      "downward_coverage_fraction": 0.28716864521754604,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "400": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 439.8740616482908,
+      "downward_flow_cfm": 15534.005886536914,
+      "reverse_flow_cmm": 434.6340195369868,
+      "net_downward_flow_cmm": 5.240042111304035,
+      "mean_air_speed_ms": 1.645368456553645,
+      "downward_coverage_fraction": 0.32710898399345595,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "500": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 479.8955101114145,
+      "downward_flow_cfm": 16947.35000072336,
+      "reverse_flow_cmm": 473.8054023054072,
+      "net_downward_flow_cmm": 6.090107806007325,
+      "mean_air_speed_ms": 1.8569931629008414,
+      "downward_coverage_fraction": 0.3375527126391516,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "600": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 498.9632383887799,
+      "downward_flow_cfm": 17620.72046997442,
+      "reverse_flow_cmm": 493.0975899324318,
+      "net_downward_flow_cmm": 5.86564845634814,
+      "mean_air_speed_ms": 1.9026833779339505,
+      "downward_coverage_fraction": 0.3603213069478416,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "700": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 476.67461352413574,
+      "downward_flow_cfm": 16833.605111199227,
+      "reverse_flow_cmm": 470.8373126132025,
+      "net_downward_flow_cmm": 5.837300910933209,
+      "mean_air_speed_ms": 1.9360098160573467,
+      "downward_coverage_fraction": 0.3374281388585446,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "800": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 499.293985926675,
+      "downward_flow_cfm": 17632.40070904414,
+      "reverse_flow_cmm": 492.5786636944991,
+      "net_downward_flow_cmm": 6.715322232175936,
+      "mean_air_speed_ms": 2.0353119876978263,
+      "downward_coverage_fraction": 0.3640886723386332,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "900": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 477.54346126368307,
+      "downward_flow_cfm": 16864.288179553063,
+      "reverse_flow_cmm": 471.0349423134971,
+      "net_downward_flow_cmm": 6.508518950185987,
+      "mean_air_speed_ms": 2.051915597290049,
+      "downward_coverage_fraction": 0.34931883014881415,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1000": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 490.6451710077886,
+      "downward_flow_cfm": 17326.97069264783,
+      "reverse_flow_cmm": 484.6333059732993,
+      "net_downward_flow_cmm": 6.01186503448929,
+      "mean_air_speed_ms": 2.1040212419140727,
+      "downward_coverage_fraction": 0.3430316075306512,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1100": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 504.9269792325041,
+      "downward_flow_cfm": 17831.32799028387,
+      "reverse_flow_cmm": 497.55677100286624,
+      "net_downward_flow_cmm": 7.3702082296378535,
+      "mean_air_speed_ms": 2.1528866638885655,
+      "downward_coverage_fraction": 0.3686289187917568,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1200": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 502.551837881658,
+      "downward_flow_cfm": 17747.450665062315,
+      "reverse_flow_cmm": 496.42447268044214,
+      "net_downward_flow_cmm": 6.127365201215866,
+      "mean_air_speed_ms": 2.181797083053861,
+      "downward_coverage_fraction": 0.34521383816403717,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1300": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 509.4013284636509,
+      "downward_flow_cfm": 17989.338142177367,
+      "reverse_flow_cmm": 502.1428227343861,
+      "net_downward_flow_cmm": 7.258505729264812,
+      "mean_air_speed_ms": 2.2265162020551106,
+      "downward_coverage_fraction": 0.36333277800798636,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1400": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 498.6356206478902,
+      "downward_flow_cfm": 17609.150758642856,
+      "reverse_flow_cmm": 492.0867331383114,
+      "net_downward_flow_cmm": 6.548887509578833,
+      "mean_air_speed_ms": 2.242505737410521,
+      "downward_coverage_fraction": 0.35875121089165923,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1500": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 505.67533619339355,
+      "downward_flow_cfm": 17857.755966946388,
+      "reverse_flow_cmm": 498.5813297806143,
+      "net_downward_flow_cmm": 7.094006412779265,
+      "mean_air_speed_ms": 2.2730986827249415,
+      "downward_coverage_fraction": 0.3566702750366463,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1600": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 496.4579435435215,
+      "downward_flow_cfm": 17532.246817475057,
+      "reverse_flow_cmm": 489.737615379157,
+      "net_downward_flow_cmm": 6.720328164364503,
+      "mean_air_speed_ms": 2.2965550277978397,
+      "downward_coverage_fraction": 0.36524916821406156,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1700": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 502.1692826692034,
+      "downward_flow_cfm": 17733.94085523191,
+      "reverse_flow_cmm": 496.1094154199971,
+      "net_downward_flow_cmm": 6.05986724920632,
+      "mean_air_speed_ms": 2.318773228620386,
+      "downward_coverage_fraction": 0.35158390869758255,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1800": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 500.2505004572014,
+      "downward_flow_cfm": 17666.17970090394,
+      "reverse_flow_cmm": 492.650475943563,
+      "net_downward_flow_cmm": 7.600024513638402,
+      "mean_air_speed_ms": 2.3435985579743117,
+      "downward_coverage_fraction": 0.35925191938725737,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "1900": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 494.190188796706,
+      "downward_flow_cfm": 17452.161814385196,
+      "reverse_flow_cmm": 487.22911175538337,
+      "net_downward_flow_cmm": 6.961077041322653,
+      "mean_air_speed_ms": 2.3639209479334697,
+      "downward_coverage_fraction": 0.35362937475881906,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    },
+    "2000": {
+      "definition_id": "horizontal-plane-screening-v1",
+      "sample_count": 3096,
+      "plane_area_m2": 16.0,
+      "downward_flow_cmm": 499.1368918243687,
+      "downward_flow_cfm": 17626.852983177283,
+      "reverse_flow_cmm": 492.20738496739875,
+      "net_downward_flow_cmm": 6.929506856969965,
+      "mean_air_speed_ms": 2.3850965559729396,
+      "downward_coverage_fraction": 0.35687393787866784,
+      "coverage_threshold_ms": 0.5,
+      "sampling_method": "Exact tetrahedral intersection / cell-constant stationary velocity",
+      "height_m": 1.2
+    }
+  },
+  "limitations": [
+    "Synthetic geometry, not company CAD.",
+    "No mesh-sensitivity or experimental validation.",
+    "Wall y-plus is broad; wall treatment is unqualified.",
+    "Completion is not convergence."
+  ]
+}

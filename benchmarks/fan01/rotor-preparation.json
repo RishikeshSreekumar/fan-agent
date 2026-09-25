@@ -1,0 +1,48 @@
+{
+  "curvature_sizing": 0,
+  "source_sha256": "6e55f67c7023f866592700a47e508a498acbbf356829a4347ad2f705f560dc17",
+  "transform_from_native_mm": [
+    0,
+    0.001,
+    0,
+    0.46,
+    0,
+    0,
+    0.001,
+    -1.515,
+    0.001,
+    0,
+    0,
+    0.4,
+    0,
+    0,
+    0,
+    1
+  ],
+  "frame": "x downstream (native Y); y up (native Z); z native X. Origin (-400,-460,1515) mm at nozzle/straight-duct transition; not asserted to be LDA origin.",
+  "rotation_axis": [
+    1,
+    0,
+    0
+  ],
+  "counts": {
+    "faces": 100,
+    "triangles": 112728,
+    "nodes": 56366
+  },
+  "cad_volume_m3": 0.0011729790068663055,
+  "surface_signed_volume_m3": 0.0011751969347355837,
+  "surface_volume_relative_error": 0.0018908504383242184,
+  "surface_closed_manifold": true,
+  "maximum_sampled_radius_m": 0.2474978246056382,
+  "nominal_radial_gap_m": 0.0025,
+  "bounds_from_mesh_m": [
+    0.03900000009482935,
+    -0.24513304967242977,
+    -0.24359890024902986,
+    0.15400000000000008,
+    0.24749415612278014,
+    0.24749083424318735
+  ],
+  "status": "rotor_surface_prepared_not_volume_mesh_or_solver_validation"
+}

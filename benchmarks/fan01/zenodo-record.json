@@ -1,0 +1,233 @@
+{
+  "created": "2024-03-06T14:20:07.856649+00:00",
+  "modified": "2025-10-31T08:02:38.726219+00:00",
+  "id": 10787093,
+  "conceptrecid": "8418340",
+  "doi": "10.5281/zenodo.10787093",
+  "conceptdoi": "10.5281/zenodo.8418340",
+  "doi_url": "https://doi.org/10.5281/zenodo.10787093",
+  "metadata": {
+    "title": "FAN-01 Benchmark: Low pressure Axial Fan in a short Duct",
+    "doi": "10.5281/zenodo.10787093",
+    "publication_date": "2024-03-06",
+    "description": "<p>The case consists of a generic axial fan for industrial applications. Provided measurement data include instationary pressure probes in the rotor's tip gap, distributions of velocity and turbulent kinetic energy gained by laser Doppler anemometry, as well as acoustic results gained by microphones and beamforming.</p>\n<p>A detailed description of the dataset with references can be found in the PDF-File. The rotor geometry is available as IGS or Parasolid file. The measurement data is available, including the ones (LDA-data, pressure probes, acoustic microphones, &uuml;erformance) listed in the PDF description file.</p>\n<p><strong>Citation of the fan and the data:</strong></p>\n<p>Zenger, Florian, et al. <em>A benchmark case for aerodynamics and aeroacoustics of a low pressure axial fan</em>. No. 2016-01-1805. SAE Technical Paper, 2016.</p>\n<p><strong>Citation of the microphone array measurements:</strong></p>\n<p>Kr&ouml;mer, Florian J. <em>Sound emission of low-pressure axial fans under distorted inflow conditions</em>. FAU University Press, 2018.</p>\n<p><strong>Citation of the python scripts:</strong></p>\n<p>Junger, Clemens. <em>Computational aeroacoustics for the characterization of noise sources in rotating systems</em>. Diss. Technische Universit&auml;t Wien, 2019.</p>\n<p><strong>Related work and existing publications:</strong></p>\n<p>Schoder, Stefan, Clemens Junger, and Manfred Kaltenbacher. \"Computational aeroacoustics of the EAA benchmark case of an axial fan.\"&nbsp;<em>Acta Acustica</em>&nbsp;4.5 (2020): 22.&nbsp;<a href=\"https://doi.org/10.1051/aacus/2020021\">https://doi.org/10.1051/aacus/2020021</a></p>\n<p>Schoder, Stefan, and Felix Czwielong. \"Dataset fan-01: Revisiting the EAA benchmark for a low-pressure axial fan.\"&nbsp;<em>arXiv preprint arXiv:2211.12014</em>&nbsp;(2022).&nbsp;<a href=\"https://doi.org/10.48550/arXiv.2211.12014\">https://doi.org/10.48550/arXiv.2211.12014</a></p>\n<p>Kaltenbacher, Manfred, and Stefan Schoder. \"EAA Benchmark for an axial fan.\"&nbsp;<em>e-Forum Acusticum 2020</em>. 2020.&nbsp;<a href=\"https://hal.science/hal-03221387/document\">https://hal.science/hal-03221387/document</a></p>\n<p>Tieghi, Lorenzo, et al. \"Machine-learning clustering methods applied to detection of noise sources in low-speed axial fan.\"&nbsp;<em>Journal of Engineering for Gas Turbines and Power</em>&nbsp;145.3 (2023): 031020.&nbsp;<a href=\"https://doi.org/10.1115/1.4055417\">https://doi.org/10.1115/1.4055417</a></p>\n<p>Antoniou, E., Romani, G., Jantzen, A., Czwielong, F., &amp; Schoder, S. (2023). Numerical flow noise simulation of an axial fan with a Lattice-Boltzmann solver. <em>Acta Acustica</em>, <em>7</em>, 65. <a href=\"https://doi.org/10.1051/aacus/2023060\">https://doi.org/10.1051/aacus/2023060</a></p>\n<p><strong>Data curation and Questions about the Dataset</strong></p>\n<p>Data curated by Stefan Schoder, any questions related to the dataset to stefan.schoder@tugraz.at.</p>\n<p>&nbsp;</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Kr\u00f6mer, Florian",
+        "affiliation": "FAU Erlangen"
+      },
+      {
+        "name": "Junger, Clemens",
+        "affiliation": "TU Wien"
+      },
+      {
+        "name": "Becker, Stefan",
+        "affiliation": "FAU Erlangen"
+      },
+      {
+        "name": "Kaltenbacher, Manfred",
+        "affiliation": "TU Graz"
+      },
+      {
+        "name": "Czwielong, Felix",
+        "affiliation": "FAU Erlangen",
+        "orcid": "0000-0001-5447-3944"
+      },
+      {
+        "name": "Schoder, Stefan",
+        "affiliation": "TU Graz",
+        "orcid": "0000-0002-2148-6703"
+      }
+    ],
+    "keywords": [
+      "Axial Fan",
+      "Aeroacoustics",
+      "Experiments",
+      "Measurements",
+      "Benchmark",
+      "Beamforming",
+      "Linear Acoustics"
+    ],
+    "references": [
+      "Schoder, Stefan, Clemens Junger, and Manfred Kaltenbacher. \"Computational aeroacoustics of the EAA benchmark case of an axial fan.\"\u00a0Acta Acustica\u00a04.5 (2020): 22.\u00a0https://doi.org/10.1051/aacus/2020021",
+      "Schoder, Stefan, and Felix Czwielong. \"Dataset fan-01: Revisiting the EAA benchmark for a low-pressure axial fan.\"\u00a0arXiv preprint arXiv:2211.12014\u00a0(2022).\u00a0https://doi.org/10.48550/arXiv.2211.12014",
+      "Kaltenbacher, Manfred, and Stefan Schoder. \"EAA Benchmark for an axial fan.\"\u00a0e-Forum Acusticum 2020. 2020.\u00a0https://hal.science/hal-03221387/document",
+      "Tieghi, Lorenzo, et al. \"Machine-learning clustering methods applied to detection of noise sources in low-speed axial fan.\"\u00a0Journal of Engineering for Gas Turbines and Power\u00a0145.3 (2023): 031020.\u00a0https://doi.org/10.1115/1.4055417"
+    ],
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "eaa-computationalacoustics"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 3,
+          "is_last": false,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8418340"
+          }
+        }
+      ]
+    },
+    "notes": "Jointly organized by the EAA TC Computational Acoustics, DEGA Fachausschuss Str\u00f6mungsakustik, AAA TC Computational Acoustics and ERCOFTAC SIG39 Aeroacoustics represented by the member Stefan Schoder."
+  },
+  "title": "FAN-01 Benchmark: Low pressure Axial Fan in a short Duct",
+  "links": {
+    "self": "https://zenodo.org/api/records/10787093",
+    "self_html": "https://zenodo.org/records/10787093",
+    "preview_html": "https://zenodo.org/records/10787093?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.10787093",
+    "self_doi": "https://doi.org/10.5281/zenodo.10787093",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.10787093",
+    "reserve_doi": "https://zenodo.org/api/records/10787093/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8418340",
+    "parent_html": "https://zenodo.org/records/8418340",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8418340",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8418340",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:10787093/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:10787093/sequence/default",
+    "files": "https://zenodo.org/api/records/10787093/files",
+    "media_files": "https://zenodo.org/api/records/10787093/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:10787093:LA_Case4_AxialFan_measurements.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:10787093:LA_Case4_AxialFan_measurements.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:10787093:LA_Case4_AxialFan_measurements.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:10787093:LA_Case4_AxialFan_measurements.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:10787093:LA_Case4_AxialFan_measurements.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:10787093:LA_Case4_AxialFan_measurements.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/10787093/files-archive",
+    "archive_media": "https://zenodo.org/api/records/10787093/media-files-archive",
+    "latest": "https://zenodo.org/api/records/10787093/versions/latest",
+    "latest_html": "https://zenodo.org/records/10787093/latest",
+    "versions": "https://zenodo.org/api/records/10787093/versions",
+    "draft": "https://zenodo.org/api/records/10787093/draft",
+    "access_links": "https://zenodo.org/api/records/10787093/access/links",
+    "access_grants": "https://zenodo.org/api/records/10787093/access/grants",
+    "access_users": "https://zenodo.org/api/records/10787093/access/users",
+    "access_request": "https://zenodo.org/api/records/10787093/access/request",
+    "access": "https://zenodo.org/api/records/10787093/access",
+    "communities": "https://zenodo.org/api/records/10787093/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/10787093/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/10787093/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/10787093/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/10787093/quota-increase",
+    "requests": "https://zenodo.org/api/records/10787093/requests"
+  },
+  "updated": "2025-10-31T08:02:38.726219+00:00",
+  "recid": "10787093",
+  "revision": 12,
+  "files": [
+    {
+      "id": "94429b35-6530-40fd-a80e-d8adfa0243c9",
+      "key": "lda_data.zip",
+      "size": 748440,
+      "checksum": "md5:7c05004f322658a54d6fca1a8b641502",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/lda_data.zip/content"
+      }
+    },
+    {
+      "id": "a0e7d385-39cf-483b-8080-c452e3e235bc",
+      "key": "mic_kulite.tar",
+      "size": 460718080,
+      "checksum": "md5:fd359d6cbc301a70c50f3eecadc4ef19",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/mic_kulite.tar/content"
+      }
+    },
+    {
+      "id": "ff87523e-72cb-47fb-908c-656726175327",
+      "key": "cad_model.zip",
+      "size": 6499159,
+      "checksum": "md5:0707f98ca71e1eae80fd0b67bc77a270",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/cad_model.zip/content"
+      }
+    },
+    {
+      "id": "a21b3ddf-b44c-4988-9e16-1e6e7efd0abc",
+      "key": "characteristic.zip",
+      "size": 34826,
+      "checksum": "md5:17602ebcb1ec5bf1ed1861eb21537bac",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/characteristic.zip/content"
+      }
+    },
+    {
+      "id": "b903ea50-1ee3-4d9e-bbc7-fdaf1f2fbfec",
+      "key": "mic_array.tar",
+      "size": 2233221120,
+      "checksum": "md5:c06ef1b8756671f7f1531663b0d334c7",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/mic_array.tar/content"
+      }
+    },
+    {
+      "id": "c31d7db5-d9d6-4d83-8a62-7e7875f6b232",
+      "key": "LA_Case4_AxialFan_measurements.pdf",
+      "size": 2156667,
+      "checksum": "md5:53f3255860b5212929148f6ce383b641",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/LA_Case4_AxialFan_measurements.pdf/content"
+      }
+    },
+    {
+      "id": "baf7fe7a-dad1-4b2a-9444-88664cba7454",
+      "key": "VDI2801_VDI3731.py",
+      "size": 1122,
+      "checksum": "md5:3f4074e5aab7112d6394f7e865811724",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/VDI2801_VDI3731.py/content"
+      }
+    },
+    {
+      "id": "4f05b1f4-509b-4ed5-b4f5-56c8326037e1",
+      "key": "Sharland.py",
+      "size": 1243,
+      "checksum": "md5:75cfa9c9745240a5ef72fb8800876f00",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/Sharland.py/content"
+      }
+    },
+    {
+      "id": "b7dcfe32-e4d3-43df-ad2d-0ad6d6c31ddf",
+      "key": "Koeltsch.zip",
+      "size": 1054113,
+      "checksum": "md5:de4e62f423207ca21b498a9e32eacfaf",
+      "links": {
+        "self": "https://zenodo.org/api/records/10787093/files/Koeltsch.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "618580"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 5475,
+    "unique_downloads": 4511,
+    "views": 3096,
+    "unique_views": 2830,
+    "version_downloads": 3022,
+    "version_unique_downloads": 2584,
+    "version_unique_views": 1281,
+    "version_views": 1424
+  },
+  "state": "done",
+  "submitted": true
+}

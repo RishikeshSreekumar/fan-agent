@@ -1,0 +1,29 @@
+{
+  "status": "geometry_coupon_only_not_complete_validation_domain",
+  "units": "m",
+  "passage_volume_m3": 0.07691216584070559,
+  "analytical_passage_volume_m3": 0.07691216584070558,
+  "rotor_volume_m3": 0.0011729790068663046,
+  "fluid_volume_m3": 0.0757393183384862,
+  "fluid_volumes": 1,
+  "surface_faces": 105,
+  "profile": {
+    "nozzle_inlet_x": -0.05,
+    "nozzle_inlet_radius": 0.3,
+    "nozzle_rounding_radius": 0.05,
+    "straight_start_x": 0,
+    "straight_end_x": 0.196,
+    "straight_radius": 0.25,
+    "diffuser_end_x": 0.324,
+    "diffuser_end_radius": 0.275
+  },
+  "simplifications": [
+    "Sealed nozzle/manufacturing openings and 3 mm assembly joints along the nominal inner passage, following the published simplification intent."
+  ],
+  "remaining": [
+    "Add inlet and outlet chambers.",
+    "Add appropriate stationary shaft/motor/strut obstruction.",
+    "Resolve LDA coordinate origin and pressure-ring locations before validation sampling.",
+    "Construct fluid volume mesh and qualify wall/tip-gap resolution."
+  ]
+}

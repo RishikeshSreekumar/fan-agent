@@ -1,0 +1,173 @@
+{
+  "started_at": "2026-09-21T18:46:28.865944+00:00",
+  "provider": "gemini",
+  "model": "gemini-2.5-flash",
+  "live": true,
+  "checks": [
+    {
+      "name": "complete",
+      "prompt": "Compare a 1200 mm ceiling fan at 250 and 300 RPM in a 4 m by 4 m by 3 m room. Rotor height is 2.5 m above the floor; sampling height is 1.2 m above the floor. Rotation is clockwise viewed from above.",
+      "proposal": {
+        "schema_version": 1,
+        "source": "llm",
+        "inputs": {
+          "diameter_mm": 1200,
+          "room_x_m": 4,
+          "room_y_m": 4,
+          "room_z_m": 3,
+          "rotor_height_m": 2.5,
+          "sampling_height_m": 1.2,
+          "direction": "cw",
+          "rpms": [
+            250,
+            300
+          ],
+          "unsupported": []
+        },
+        "cases": [
+          {
+            "diameter_mm": 1200,
+            "room_x_m": 4,
+            "room_y_m": 4,
+            "room_z_m": 3,
+            "rotor_height_m": 2.5,
+            "sampling_height_m": 1.2,
+            "direction": "cw",
+            "name": "Ceiling fan at 250 RPM",
+            "rpm": 250
+          },
+          {
+            "diameter_mm": 1200,
+            "room_x_m": 4,
+            "room_y_m": 4,
+            "room_z_m": 3,
+            "rotor_height_m": 2.5,
+            "sampling_height_m": 1.2,
+            "direction": "cw",
+            "name": "Ceiling fan at 300 RPM",
+            "rpm": 300
+          }
+        ],
+        "missing_inputs": [
+          "geometry_id (attach locally before saving)"
+        ],
+        "issues": [],
+        "unsupported": [],
+        "status": "proposal_ready",
+        "can_run": false,
+        "qualification": "Input sanity checks are not physical validation. Review every AI-extracted value. Geometry and CFD qualification remain required.",
+        "results": null
+      },
+      "checks": {
+        "execution_blocked": true,
+        "no_results": true,
+        "two_requested_speeds": true,
+        "explicit_values_preserved": true,
+        "ready_for_review": true
+      },
+      "passed": true
+    },
+    {
+      "name": "missing",
+      "prompt": "Compare this ceiling fan at 250 and 300 RPM.",
+      "proposal": {
+        "schema_version": 1,
+        "source": "llm",
+        "inputs": {
+          "diameter_mm": null,
+          "room_x_m": null,
+          "room_y_m": null,
+          "room_z_m": null,
+          "rotor_height_m": null,
+          "sampling_height_m": null,
+          "direction": null,
+          "rpms": [
+            250,
+            300
+          ],
+          "unsupported": []
+        },
+        "cases": [],
+        "missing_inputs": [
+          "diameter_mm",
+          "room_x_m",
+          "room_y_m",
+          "room_z_m",
+          "rotor_height_m",
+          "sampling_height_m",
+          "direction",
+          "geometry_id (attach locally before saving)"
+        ],
+        "issues": [],
+        "unsupported": [],
+        "status": "needs_inputs",
+        "can_run": false,
+        "qualification": "Input sanity checks are not physical validation. Review every AI-extracted value. Geometry and CFD qualification remain required.",
+        "results": null
+      },
+      "checks": {
+        "execution_blocked": true,
+        "no_results": true,
+        "requests_missing_inputs": true,
+        "no_invented_values": true,
+        "requested_speeds_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "name": "unsupported",
+      "prompt": "For this ceiling fan, change the blade pitch by 5 degrees and run a transient sliding-mesh AMI simulation. Predict the resulting torque now.",
+      "proposal": {
+        "schema_version": 1,
+        "source": "llm",
+        "inputs": {
+          "diameter_mm": null,
+          "room_x_m": null,
+          "room_y_m": null,
+          "room_z_m": null,
+          "rotor_height_m": null,
+          "sampling_height_m": null,
+          "direction": null,
+          "rpms": [],
+          "unsupported": [
+            "blade pitch/chord edits",
+            "transient/AMI",
+            "physics changes",
+            "predicted results"
+          ]
+        },
+        "cases": [],
+        "missing_inputs": [
+          "diameter_mm",
+          "room_x_m",
+          "room_y_m",
+          "room_z_m",
+          "rotor_height_m",
+          "sampling_height_m",
+          "direction",
+          "rpm",
+          "geometry_id (attach locally before saving)"
+        ],
+        "issues": [],
+        "unsupported": [
+          "blade pitch/chord edits",
+          "transient/AMI",
+          "physics changes",
+          "predicted results"
+        ],
+        "status": "unsupported",
+        "can_run": false,
+        "qualification": "Input sanity checks are not physical validation. Review every AI-extracted value. Geometry and CFD qualification remain required.",
+        "results": null
+      },
+      "checks": {
+        "execution_blocked": true,
+        "no_results": true,
+        "unsupported_work_blocked": true
+      },
+      "passed": true
+    }
+  ],
+  "scope": "Three generic prompts only; no geometry, case creation or solver requests.",
+  "passed": true
+}

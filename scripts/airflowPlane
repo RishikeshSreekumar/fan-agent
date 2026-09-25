@@ -1,0 +1,19 @@
+airflowPlane
+{
+    type surfaces;
+    libs (sampling);
+    writeControl writeTime;
+    surfaceFormat vtk;
+    formatOptions { vtk { format ascii; legacy true; } }
+    fields (U);
+    surfaces
+    {
+        measurement
+        {
+            type plane;
+            point (0 0 1.2);
+            normal (0 0 1);
+            interpolate false;
+        }
+    }
+}
