@@ -51,7 +51,7 @@ class CommandTests(unittest.TestCase):
         env = {**SSH, 'FAN_AGENT_CFD_DOCKER_IMAGE': 'fan-agent-cfd:2412', 'FAN_AGENT_RUN_ROOT': '/srv/runs'}
         remote = Runner(env, 'posix').check()._command('bash', 'host-check.sh', [], '/srv/runs')[-1]
         self.assertIn('docker run --rm -u "$(id -u):$(id -g)"', remote)
-        self.assertIn('/srv/fan-agent/scripts:/fan-agent/scripts:ro', remote)
+        self.assertIn('-v /srv/fan-agent:/fan-agent:ro', remote)
         self.assertIn('-v /srv/runs:/srv/runs', remote)
         self.assertIn('FAN_AGENT_RUN_ROOT=/srv/runs', remote)
         self.assertTrue(remote.endswith('fan-agent-cfd:2412 bash /fan-agent/scripts/host-check.sh'))
@@ -75,7 +75,7 @@ class RemoteTransferTests(unittest.TestCase):
             result = Runner(SSH, 'posix').run_python('convert-step.py', [source], [Path(folder) / 'out.stl', Path(folder) / 'out.json'], timeout=5)
             self.assertEqual(result.returncode, 0)
             self.assertEqual((Path(folder) / 'out.stl').read_bytes(), b'solid')
-        self.assertIn('mkdir -p /srv/fan-agent/scripts', calls[0])
+        self.assertEqual(calls[0], 'mkdir -p /srv/fan-agent && tar -xzf - -C /srv/fan-agent')
         self.assertIn('/usr/bin/python3 /srv/fan-agent/scripts/convert-step.py /srv/fan-agent/jobs/', calls[2])
         self.assertTrue(calls[-1].startswith('rm -rf /srv/fan-agent/jobs/'))
 

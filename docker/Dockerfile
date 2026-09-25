@@ -1,5 +1,5 @@
 # Fan-Agent CFD worker: OpenCFD OpenFOAM v2412 plus system-Python Gmsh.
-# Scripts are not baked in; the runner mounts the repository scripts read-only at /fan-agent/scripts.
+# Scripts are not baked in; the runner mounts the repository (scripts/ and fan_agent/) read-only at /fan-agent.
 # Build on the CFD host:  docker build -t fan-agent-cfd:2412 docker/
 FROM opencfd/openfoam-default:2412
 

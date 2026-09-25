@@ -2,17 +2,11 @@
 
 import math
 
+from .recipe import RECIPE  # single source for the screening recipe
+
 INPUT_RANGES = {"rpm": (1, 3000), "diameter_mm": (100, 10000),
               "room_x_m": (0.5, 100), "room_y_m": (0.5, 100), "room_z_m": (0.5, 30),
               "rotor_height_m": (0.1, 29.9), "sampling_height_m": (0.01, 29.8)}
-
-
-RECIPE = {
-    "id": "mrf-sst-v2412-draft1", "status": "unqualified",
-    "platform": "OpenCFD OpenFOAM v2412", "solver": "simpleFoam",
-    "rotation": "MRF", "turbulence": "kOmegaSST",
-    "description": "Proposed screening recipe. Not approved for simulation or design decisions."
-}
 
 
 def validate_case(raw):
@@ -67,7 +61,7 @@ def preflight(parameters, geometry=None):
         {"id": "geometry", "label": "STL surface inspection", "status": "pass" if geometry_ok else "blocked",
          "detail": "Basic surface checks passed; orientation and rotor suitability need CFD review." if geometry_ok else "Upload a closed, nondegenerate STL."},
         {"id": "alignment", "label": "Geometry placement", "status": "blocked", "detail": "Confirm CAD axis, blade span, clearances, orientation and rotating-zone enclosure."},
-        {"id": "recipe", "label": "CFD template qualification", "status": "blocked", "detail": "MRF/SST recipe needs approved boundaries, wall treatment, mesh controls and acceptance criteria."},
+        {"id": "recipe", "label": "CFD template qualification", "status": "blocked", "detail": "Candidate recipe " + RECIPE["id"] + " awaits the three-level mesh study and comparison with measured fan data."},
         {"id": "measurement", "label": "Screening metric qualification", "status": "blocked", "detail": "Plane height is recorded. Qualify downward/reverse flow, area-weighted speed and torque extraction. Reproducing the company CMM method is not required."},
         {"id": "runtime", "label": "Solver runtime", "status": "blocked", "detail": "OpenFOAM v2412 ran only on a developer host; designer runs have no verified execution host."}
     ]

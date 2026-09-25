@@ -19,8 +19,10 @@ import uuid
 
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = ROOT / "scripts"
+PACKAGE = ROOT / "fan_agent"
 BACKENDS = ("wsl", "local", "ssh")
-CONTAINER_SCRIPTS = "/fan-agent/scripts"
+CONTAINER_ROOT = "/fan-agent"
+FORWARDED = ("FAN_AGENT_CFD_PROCS", "FAN_AGENT_SOLVER_TIMEOUT")
 LINUX_PATH = r"/[A-Za-z0-9/._-]*"
 
 
@@ -62,6 +64,8 @@ class Runner:
         self.remote_dir = env.get("FAN_AGENT_CFD_REMOTE_DIR", "").strip()
         self.image = env.get("FAN_AGENT_CFD_DOCKER_IMAGE", "").strip()
         self.run_root = env.get("FAN_AGENT_RUN_ROOT", "").strip()
+        # Numeric solver settings forwarded to host scripts.
+        self.forward = {k: env.get(k, "").strip() for k in FORWARDED if env.get(k, "").strip()}
 
     def check(self):
         if self.backend not in BACKENDS:
@@ -83,32 +87,38 @@ class Runner:
                 raise HostError("Set FAN_AGENT_RUN_ROOT (absolute host path) so container run folders persist.")
         if self.run_root and not re.fullmatch(LINUX_PATH, self.run_root):
             raise HostError("FAN_AGENT_RUN_ROOT must be an absolute Linux path.")
+        for key, value in self.forward.items():
+            if not re.fullmatch(r"[1-9][0-9]{0,6}", value):
+                raise HostError(f"{key} must be a positive integer.")
         return self
 
     def describe(self):
         return {"backend": self.backend or None, "host": self.host or None,
                 "wsl_distro": self.distro if self.backend == "wsl" else None,
                 "docker_image": self.image or None, "remote_dir": self.remote_dir or None,
-                "run_root": self.run_root or None}
+                "run_root": self.run_root or None, "forwarded": dict(self.forward)}
 
     # Command construction -------------------------------------------------
     def _ssh(self, remote_command):
         port = ["-p", self.port] if self.port else []
         return ["ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=15", *port, "--", self.host, remote_command]
 
-    def _host_scripts(self):
-        """Script folder as seen by the Linux host (outside any container)."""
+    def _host_root(self):
+        """Repository copy (scripts/ and fan_agent/) as seen by the Linux host."""
         if self.backend == "ssh":
-            return str(PurePosixPath(self.remote_dir) / "scripts")
-        return wsl_path(SCRIPTS) if self.backend == "wsl" else str(SCRIPTS)
+            return self.remote_dir
+        return wsl_path(ROOT) if self.backend == "wsl" else str(ROOT)
+
+    def _host_scripts(self):
+        return str(PurePosixPath(self._host_root()) / "scripts")
 
     def _command(self, interpreter, name, args, workdir):
         """Full argv that runs scripts/<name> on the configured host (and container)."""
-        env = {"FAN_AGENT_RUN_ROOT": self.run_root} if self.run_root else {}
+        env = dict(self.forward, **({"FAN_AGENT_RUN_ROOT": self.run_root} if self.run_root else {}))
         if self.image:
-            script = f"{CONTAINER_SCRIPTS}/{name}"
+            script = f"{CONTAINER_ROOT}/scripts/{name}"
             docker = ["docker", "run", "--rm", "--entrypoint", "", "-w", workdir, "-e", "HOME=/tmp",
-                      "-v", f"{self._host_scripts()}:{CONTAINER_SCRIPTS}:ro"]
+                      "-v", f"{self._host_root()}:{CONTAINER_ROOT}:ro"]
             for mount in dict.fromkeys([workdir, self.run_root]):
                 docker += ["-v", f"{mount}:{mount}"]
             for key, value in env.items():
@@ -127,8 +137,10 @@ class Runner:
         return ["bash", "-c", command]
 
     def _sync_scripts(self):
-        files = [(p.name, p) for p in sorted(SCRIPTS.iterdir()) if p.is_file() and p.suffix != ".pyc"]
-        target = shlex.quote(self._host_scripts())
+        # Worker scripts import the stdlib-only fan_agent package, so ship both.
+        files = [(f"{folder.name}/{p.name}", p) for folder in (SCRIPTS, PACKAGE)
+                 for p in sorted(folder.iterdir()) if p.is_file() and p.suffix != ".pyc"]
+        target = shlex.quote(self._host_root())
         result = subprocess.run(self._ssh(f"mkdir -p {target} && tar -xzf - -C {target}"),
                                 input=_pack(files), capture_output=True, timeout=120)
         if result.returncode:

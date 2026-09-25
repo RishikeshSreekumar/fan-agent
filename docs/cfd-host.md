@@ -13,7 +13,7 @@ OpenFOAM tools used by the scripts, Python Gmsh, `m4` and a writable run root. I
 | `FAN_AGENT_WSL_DISTRO` | wsl | WSL distribution, default `Ubuntu`. |
 | `FAN_AGENT_CFD_HOST` | ssh | `host` or `user@host`. Key-based login required (`BatchMode=yes`). |
 | `FAN_AGENT_CFD_SSH_PORT` | ssh | Optional port. |
-| `FAN_AGENT_CFD_REMOTE_DIR` | ssh | Absolute remote folder; scripts are copied to `scripts/`, STEP jobs use `jobs/` and are deleted afterwards. |
+| `FAN_AGENT_CFD_REMOTE_DIR` | ssh | Absolute remote folder; `scripts/` and `fan_agent/` are copied there, STEP jobs use `jobs/` and are deleted afterwards. |
 | `FAN_AGENT_CFD_DOCKER_IMAGE` | local, ssh | Run each worker inside this image (see `docker/Dockerfile`). |
 | `FAN_AGENT_RUN_ROOT` | all; required with Docker | Absolute Linux folder for `fan-agent-*` case folders. Default `$HOME` on the host. |
 
@@ -44,6 +44,6 @@ FAN_AGENT_CFD_DOCKER_IMAGE=fan-agent-cfd:2412
 FAN_AGENT_RUN_ROOT=/srv/fan-agent/runs          # must exist and be writable by the ssh user
 ```
 
-Combine with the ssh variables above. Containers run as the ssh user with the scripts mounted
+Combine with the ssh variables above. Containers run as the ssh user with the repository copy mounted
 read-only. The image build and Docker path have not yet been exercised on a real host; run
 `host-check` first and record the result.
