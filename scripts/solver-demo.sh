@@ -3,7 +3,7 @@ source /usr/lib/openfoam/openfoam2412/etc/bashrc
 set -euo pipefail
 script_dir=$(cd "$(dirname "$0")" && pwd)
 source_case=/home/akshay/fan-agent-cadmesh-6zIy8SyE
-run_dir=$(mktemp -d "$HOME/fan-agent-solver-XXXXXXXX")
+run_dir=$(mktemp -d "${FAN_AGENT_RUN_ROOT:-$HOME}/fan-agent-solver-XXXXXXXX")
 echo "CASE_DIRECTORY=$run_dir"
 trap 'code=$?; tail -n 35 "$run_dir"/log.* 2>/dev/null; exit "$code"' ERR
 cp -a "$source_case/constant" "$source_case/system" "$run_dir/"

@@ -5,6 +5,8 @@ from pathlib import Path
 import subprocess
 from datetime import datetime, timezone
 
+from .runner import HostError, Runner
+
 
 def mesh_diagnostics_from_output(output):
     """Failure-log tails can repeat earlier stage records; select the final mesh only."""
@@ -16,25 +18,23 @@ def mesh_diagnostics_from_output(output):
     return None
 
 
-def smoke(mesh=False, cad=False):
+def smoke(mesh=False, cad=False, host=False):
     root = Path(__file__).resolve().parent.parent
-    script = root / "scripts" / ("cad-mesh-demo.sh" if cad else "mesh-demo.sh" if mesh else "runtime-smoke.sh")
-    if script.drive:
-        linux_script = "/mnt/" + script.drive[0].lower() + script.as_posix()[2:]
-        command = ["wsl", "-d", "Ubuntu", "--", "bash", linux_script]
-    else:
-        command = ["bash", str(script)]
-    report = {"started_at": datetime.now(timezone.utc).isoformat(),
-              "purpose": "Synthetic fan mesh development, not solver qualification" if mesh or cad else "Vendor MRF tutorial runtime check, not fan validation",
-              "accepted_fan_results": False, "command": command}
+    script = "host-check.sh" if host else "cad-mesh-demo.sh" if cad else "mesh-demo.sh" if mesh else "runtime-smoke.sh"
+    runner = Runner()
+    purpose = ("CFD host toolchain check; no case or solver run" if host else
+               "Synthetic fan mesh development, not solver qualification" if mesh or cad else
+               "Vendor MRF tutorial runtime check, not fan validation")
+    report = {"started_at": datetime.now(timezone.utc).isoformat(), "purpose": purpose,
+              "accepted_fan_results": False, "script": script, "host": runner.describe()}
     try:
-        result = subprocess.run(command, capture_output=True, text=True, timeout=1200 if mesh or cad else 600)
+        result = runner.run_script(script, timeout=120 if host else 1200 if mesh or cad else 600)
         report.update(exit_code=result.returncode, stdout=result.stdout, stderr=result.stderr,
                       status="passed" if result.returncode == 0 else "failed")
         diagnostics = mesh_diagnostics_from_output(result.stdout)
         if diagnostics is not None:
             report['mesh_diagnostics'] = diagnostics
-    except (OSError, subprocess.TimeoutExpired) as exc:
+    except (OSError, subprocess.TimeoutExpired, HostError) as exc:
         report.update(status="failed", error=str(exc))
     output = root / "data" / "runtime"
     output.mkdir(parents=True, exist_ok=True)

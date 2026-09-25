@@ -3,7 +3,7 @@
 source /usr/lib/openfoam/openfoam2412/etc/bashrc
 set -euo pipefail
 test "$WM_PROJECT_VERSION" = v2412
-run_dir=$(mktemp -d "$HOME/fan-agent-smoke-XXXXXXXX")
+run_dir=$(mktemp -d "${FAN_AGENT_RUN_ROOT:-$HOME}/fan-agent-smoke-XXXXXXXX")
 echo "CASE_DIRECTORY=$run_dir"
 echo "OPENFOAM_VERSION=$WM_PROJECT_VERSION"
 cp -a "$FOAM_TUTORIALS/incompressible/simpleFoam/mixerVessel2D/." "$run_dir/"

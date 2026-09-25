@@ -14,6 +14,8 @@ Local, constrained ceiling-fan CFD workbench. This is the first implementation m
 
 ## Start
 
+CFD and CAD workers run on a configured host (Windows+WSL by default, or a remote Linux/Docker server); see [CFD host configuration](docs/cfd-host.md) and `python -m fan_agent host-check`.
+
 Python 3.10+; no third-party dependencies:
 
 ```powershell

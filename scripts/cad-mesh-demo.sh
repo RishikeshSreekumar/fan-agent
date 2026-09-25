@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source /usr/lib/openfoam/openfoam2412/etc/bashrc
 set -euo pipefail
-run_dir=$(mktemp -d "$HOME/fan-agent-cadmesh-XXXXXXXX")
+run_dir=$(mktemp -d "${FAN_AGENT_RUN_ROOT:-$HOME}/fan-agent-cadmesh-XXXXXXXX")
 echo "CASE_DIRECTORY=$run_dir"
 trap 'code=$?; echo "FAILED_EXIT=$code"; tail -n 25 "$run_dir"/log.* 2>/dev/null; exit "$code"' ERR
 /usr/bin/python3 "$(dirname "$0")/build-mesh-demo.py" "$run_dir" > "$run_dir/log.geometry" 2>&1

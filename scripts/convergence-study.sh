@@ -3,7 +3,7 @@ source /usr/lib/openfoam/openfoam2412/etc/bashrc
 set -euo pipefail
 script_dir=$(cd "$(dirname "$0")" && pwd)
 source_case=/home/akshay/fan-agent-solver-extended-XLn0e3bm
-run_dir=$(mktemp -d "$HOME/fan-agent-convergence-XXXXXXXX")
+run_dir=$(mktemp -d "${FAN_AGENT_RUN_ROOT:-$HOME}/fan-agent-convergence-XXXXXXXX")
 echo "CASE_DIRECTORY=$run_dir"
 cp -a "$source_case/." "$run_dir/"
 cd "$run_dir"
