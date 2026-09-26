@@ -1,20 +1,18 @@
 # AI ceiling-fan study planner
 
-Implemented 2026-09-21. Gemini (default) and OpenAI API transports and UI are implemented; live Gemini 2.5 Flash extraction passed the three recorded smoke scenarios after a prompt correction.
+Implemented 2026-09-21. OpenAI is the default provider since 2026-09-25; the Gemini transport remains optional. Recorded live checks (2026-09-21) used Gemini 2.5 Flash; the OpenAI transport has mocked tests only and needs a live check with `scripts/check-live-ai.py`.
 
 ## Start locally
 
-Stop the old Fan-Agent server if it occupies port 8765. In PowerShell, from the fan-agent directory:
+Stop the old Fan-Agent server if it occupies port 8765. In PowerShell, run the saved script by its full path (not its pasted contents):
 
 ```powershell
-& "D:\AI assisted simulation\Foam-Agent-main\fan-agent\start-ai.ps1" -Model "gemini-2.5-flash"
+& "<path to>\fan-agent\start-ai.ps1" -Model "<openai model id>"
 ```
 
-Run the command above, not the contents of the script. It works from any PowerShell folder. The supplied model ID is the user-selected model; live access remains to be verified.
+The helper prompts for a hidden OpenAI API key and a model ID that supports structured outputs. It does not save the key to disk; it supplies credentials to the server process and restores previous environment settings on exit. Alternatively set OPENAI_API_KEY and FAN_AGENT_AI_MODEL (FAN_AGENT_AI_PROVIDER defaults to openai) in the server environment and use start.ps1. Do not put keys into chat, browser fields or source files.
 
-The helper prompts for a hidden Gemini API key and a model ID supporting Gemini structured outputs. It does not save the key to disk; it supplies credentials to the server process and restores previous environment settings on exit. Use an API key with access to the selected model. An alternative is setting GEMINI_API_KEY, FAN_AGENT_AI_PROVIDER=gemini and FAN_AGENT_AI_MODEL in the server environment and using start.ps1. Do not put keys into chat, browser fields or source files.
-
-OpenAI remains optional via `./start-ai.ps1 -Provider openai` with its own key and model. You do not need an OpenAI key for Gemini.
+Gemini remains available via `./start-ai.ps1 -Provider gemini` with GEMINI_API_KEY.
 
 Open http://127.0.0.1:8765 and select **AI study planner**. The existing app needs a restart to load the new backend.
 
